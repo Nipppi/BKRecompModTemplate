@@ -1,0 +1,57 @@
+# Config file for Banjo-Kazooie: Recompiled 16:9 HUD Stretch Mod
+
+# Fields that end up in the mod's manifest.
+[manifest]
+
+# Unique ID of this mod.
+id = "xbla_style_hud"
+
+# Version of this mod.
+version = "0.0.1"
+
+# The name that will show up for this mod in the mod menu.
+display_name = "XBLA Style HUD"
+
+# The description that will show up when this mod is displayed in the mod menu.
+description = """
+Gives the HUD a wider look, inspired by the Banjo-Tooie native widescreen mode and the XBLA ports. Text boxes and menu HUD stretches across the 16:9 screen.
+
+To enable, use with "Original" HUD setting under the graphics tab.
+"""
+
+# Short description for the mod list.
+short_description = "Gives the HUD a wider look"
+
+# Authors of this mod.
+authors = [ "Nippi" ]
+
+# ID of the target recomp game.
+game_id = "bk"
+
+# Minimum version of BK: Recompiled that this mod can run on.
+minimum_recomp_version = "0.0.1"
+
+# Dependency mods
+dependencies = []
+
+# Optional dependency mods
+optional_dependencies = []
+
+# Native libraries
+native_libraries = []
+
+# Inputs to the mod tool.
+[inputs]
+
+# Input elf file to generate a mod from.
+elf_path = "build/mod.elf"
+
+# Output mod filename.
+mod_filename = "xbla_style_hud"
+
+# Reference symbol files.
+func_reference_syms_file = "BanjoRecompSyms/bk.us.rev0.syms.toml"
+data_reference_syms_files = [ "BanjoRecompSyms/bk.us.rev0.datasyms.toml" ]
+
+# Additional files to include in the mod.
+additional_files = [ "thumb.png" ]
